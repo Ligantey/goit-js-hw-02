@@ -5,12 +5,12 @@ function makeTransaction(quantity, pricePerDroid, customerCredits) {
   // pricePerDroid — ціна одного дроїда
   // customerCredits — сума коштів на рахунку клієнта
 
-  const totalPriceDroid = quantity * pricePerDroid;
-
-  if (totalPriceDroid > customerCredits) {
+  if (quantity * pricePerDroid > customerCredits) {
     return 'Insufficient funds!';
-  } else if (totalPriceDroid <= customerCredits) {
-    return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+  } else {
+    return `You ordered ${quantity} droids worth ${
+      quantity * pricePerDroid
+    } credits!`;
   }
 }
 
