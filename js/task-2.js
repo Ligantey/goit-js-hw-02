@@ -1,10 +1,9 @@
-// Задача 2. Форматування повідомлення
+// Exercise 2.
 
 function formatMessage(message, maxLength) {
-  if (message >= maxLength) {
+  if (message.length <= maxLength) {
     return message;
   } else {
-    // let messageFew = message.length - 1;
     return message.slice(0, maxLength) + '...';
   }
 }

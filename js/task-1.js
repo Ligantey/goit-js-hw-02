@@ -1,4 +1,4 @@
-// Задача 1. Замовлення дроїдів
+// Exercise 1.
 
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
   // quantity — кількість замовлених дроїдів
